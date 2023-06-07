@@ -8,12 +8,12 @@ const Hero = () => {
     const SOCIAL = [
         {
             id: 1,
-            link: "https://linkedin.com",
+            link: "https://www.linkedin.com/in/iago-s%C3%A1nchez-v%C3%A1zquez-34322310a/",
             icon: <FaLinkedin />,
         },
         {
             id: 2,
-            link: "https://github.com",
+            link: "https://github.com/iagirr",
             icon: <FaGithub />,
         },
         {
