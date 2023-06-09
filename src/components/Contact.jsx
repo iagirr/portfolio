@@ -25,12 +25,20 @@ const Contact = () => {
     Leave your contact details, and I'll get back to you as soon as possible."
     >
         <div className='p8 text-left w-full'>
-            <form action='' method='POST'>
+            <form action='https://getform.io/f/ef8883c9-fafb-4d2a-a620-cffeb52ccb74' method='POST'>
                 
                 <div className='w-full'>
                     <div className='flex flex-col my-2'>
                         <label className='capitalize text-sm py-2 font-extralight'>Name</label>
                         <input type='text' name='name'
+                        className='border-2 rounded-lg p-3 flex focus:outline-none
+                         border-yellow-600 dark:bg-black dark:text-white'
+                        ></input>
+                    </div>
+
+                    <div className='flex flex-col'>
+                        <label className='capitalize text-sm py-2 font-extralight'>Phone</label>
+                        <input type='text' name='phone'
                         className='border-2 rounded-lg p-3 flex focus:outline-none
                          border-yellow-600 dark:bg-black dark:text-white'
                         ></input>
