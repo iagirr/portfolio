@@ -2,7 +2,7 @@ import React from "react";
 import { MdNightlight, MdWbSunny} from 'react-icons/md';
 
 const Header = ({darkMode, setDarkMode}) => {
-    return <header className="bg-gray-100 dark:bg-black text-gray-900 dark:text-white">
+    return <header className="bg-white dark:bg-black text-gray-900 dark:text-white">
         <nav className="flex justify-between items-center p-5">
             <h1 className="text-lg">
                 {/* Por si quero añadir algo ao lado esquerdo */}
