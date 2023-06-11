@@ -21,53 +21,53 @@ const Hero = () => {
     const BOX = [
         {
             id: 1,
-            icon: '../public/skills/html.png',
+            icon: '../skills/html.png',
             name: "HTML",
         },
         {
             id: 2,
-            icon: "/public/skills/css.png",
+            icon: '../skills/css.png',
             name: "CSS",
         },
         {
-            id: 3,
-            icon: "/public/skills/tw.png",
-            name: "Tailwind CSS",
-        },
-        {
             id: 4,
-            icon: "/public/skills/js.png",
+            icon: "../skills/js.png",
             name: "Javascript",
         },
         {
+            id: 3,
+            icon: '../skills/tw2.png',
+            name: "Tailwind CSS",
+        },
+        {
             id: 5,
-            icon: "/public/skills/react.png",
+            icon: "../skills/react.png",
             name: "React",
         },
         {
             id: 6,
-            icon: "/public/skills/node.png",
+            icon: "../skills/node.png",
             name: "Node.js",
         },
         {
             id: 7,
-            icon: "/public/skills/git.png",
+            icon: "../skills/git.png",
             name: "Git",
         },
         {
             id: 8,
-            icon: "/public/skills/sql.png",
+            icon: "../skills/sql2.png",
             name: "SQL",
         },
         {
             id: 9,
-            icon: "/public/skills/python.png",
-            name: "Python",
+            icon: "../skills/linux2.png",
+            name: "Linux",
         },
     ];
 
     return (
-    <section className='min-h-screen flex justify-start items-center p-4 text-center'>
+    <section className='min-h-screen flex justify-start items-center p-6 text-center'>
     
         <div className='w-1/2 flex-col'>
             <h2 className='py-4 mx-auto text-5xl text-yellow-600 font-md uppercase font-bold'>
@@ -92,12 +92,27 @@ const Hero = () => {
                 <img src={avatar} alt='avatar' className='mt-6 mx-auto w-50 h-60 md:w-64 md:h-72 rounded-xl'/>
             </div>
         </div>
-
-        <div className='w-1/2'>
+        <div className='w-1/2 grid grid-cols-3 gap-4'>
             {BOX.map(({ id, icon, name }) => (
-                <img key={id} src={icon} alt={name} className='w-10 h-10 mx-2' />
-            ))};
+                <div
+                key={id}
+                className='relative flex flex-col items-center 
+                transform hover:scale-110 transition-transform'
+                >
+                <div className='rounded-full bg-black w-20 h-20 border-2
+                 border-yellow-400 flex items-center justify-center'>
+                    <div className='rounded-full bg-black w-16 h-16 
+                    flex items-center justify-center'>
+                    <img src={icon} alt={name} className='w-10 h-10' />
+                    </div>
+                </div>
+                <p className='mt-2 text-center'>{name}</p>
+                </div>
+            ))}
         </div>
+
+
+
 
     </section>
     );
