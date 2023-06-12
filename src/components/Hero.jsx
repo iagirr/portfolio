@@ -67,7 +67,7 @@ const Hero = () => {
     ];
 
     return (
-    <section className='min-h-screen flex justify-start items-center p-6 text-center'>
+    <section className='min-h-screen flex justify-start items-center pb-16 text-center'>
     
         <div className='w-1/2 flex-col'>
             <h2 className='py-4 mx-auto text-5xl text-yellow-600 font-md uppercase font-bold'>

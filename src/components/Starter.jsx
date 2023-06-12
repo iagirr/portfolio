@@ -3,10 +3,7 @@ import React from 'react'
 const Starter = () => {
   return (
     <section title='Starter'>
-        <div>
-        
-        </div>
-        <div className='flex flex-col items-center justify-center just h-screen'>
+        <div className='flex flex-col items-center justify-center just h-screen py-20'>
             <div className='text-center mb-4 text-6xl'>
             Hello, I'm <span className='text-yellow-600'>Iago</span>
             </div>
