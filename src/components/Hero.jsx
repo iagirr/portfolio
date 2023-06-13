@@ -61,8 +61,8 @@ const Hero = () => {
         },
         {
             id: 9,
-            icon: "../skills/linux2.png",
-            name: "Linux",
+            icon: "../skills/python.png",
+            name: "Python",
         },
     ];
 
@@ -70,10 +70,11 @@ const Hero = () => {
     <section className='min-h-screen flex justify-start items-center pb-16 text-center'>
     
         <div className='w-1/2 flex-col'>
-            <h2 className='py-4 mx-auto text-5xl text-yellow-600 font-md uppercase font-bold'>
+            <h2 className='py-4 mx-auto text-5xl text-yellow-600 font-md 
+            uppercase font-bold'>
                 Iago Sánchez
             </h2>
-            <p className='py-4 mx-auto font-light text-left'>
+            <p className='py-4 mx-auto font-light text-left ml-6'>
             Completely dedicated to the philosophy of lifelong learning,
             I'm a full stack developer with a strong enthusiasm for JavaScript, Node,
             React, and the vast world of web development.

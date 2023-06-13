@@ -6,11 +6,11 @@ import Footer from "./components/Footer";
 import Starter from "./components/Starter";
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const darkMode = useState(true);
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <main className={`bg-white ${darkMode ? "dark:bg-black text-white" : "text-black"}`}>
+      <main className={`bg-white ${darkMode ? "dark:bg-zinc-800 text-white" : "text-black"}`}>
         <Starter />
         <Hero />
         <Projects />

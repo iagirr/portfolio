@@ -13,7 +13,7 @@ const Projects = () => {
 
     <div className="h-screen flex pt-8">
       <a href="http://localhost:3000/" rel='noreferrer' target="_blank" 
-      className="bg-blue-900 h-3/4 w-3/4 flex items-center">
+      className="bg-blue-900 h-3/4 w-3/4 flex items-center hover:scale-105 transition-transform duration-300">
         <div className="m-auto">
           <img src={portf} alt="imagen" className="w-4/5 ml-4"/>
         </div>
@@ -45,7 +45,7 @@ const Projects = () => {
             CURRENTLY || IALAR
           </h3>
           <br/>
-          <p className="relative -ml-70 text-white text-xl max-w-ful">
+          <p className="relative -ml-70 text-white text-xl max-w-ful z-10">
           I'm working on a project for a website focused on curtains and home textiles.
           The website aims to provide a wide range of curtains and home decor items
            for customers to choose from.
@@ -58,7 +58,7 @@ const Projects = () => {
       </div>
       
       <a href="http://localhost:3000/" rel='noreferrer' target="_blank" 
-      className="bg-blue-900 h-3/4 w-3/4 flex items-center">
+      className="bg-blue-900 h-3/4 w-3/4 flex items-center hover:scale-105 transition-transform duration-300">
         <div className="m-auto">
           <img src={bedr} alt="imagen" className="w-2/3 ml-auto -mr-2"/>
         </div>
